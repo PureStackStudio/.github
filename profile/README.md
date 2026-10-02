@@ -1,107 +1,92 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/PureStackStudio/PureStack/main/docs/assets/readme-banner.svg" alt="PureStack: Build sites with Markdown and TypeScript. Pages, components, styles, and browser scripts." width="1200" />
+
 # PureStack Studio
 
-**TypeScript-native frontend infrastructure for the AI age.**
+**We build PureStack: content sites and interactive pages with Markdown, Regor, and TypeScript.**
 
-Coherent source for real products: content, interfaces, styles, scripts,
-workflows, and tooling designed to belong together.
+[![npm version](https://img.shields.io/npm/v/purestack?style=flat-square&color=c026d3)](https://www.npmjs.com/package/purestack)
+[![CI](https://github.com/PureStackStudio/PureStack/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/PureStackStudio/PureStack/actions/workflows/ci.yml)
+[![TypeScript](https://img.shields.io/badge/TypeScript-7-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-a855f7?style=flat-square)](https://github.com/PureStackStudio/PureStack/blob/main/LICENSE)
+
+**[Explore PureStack](https://github.com/PureStackStudio/PureStack)** ·
+**[Read the docs](https://purestack.studio/guides/)** ·
+**[Browse components](https://purestack.studio/components/)** ·
+**[Contribute](https://github.com/PureStackStudio/PureStack/blob/main/CONTRIBUTING.md)**
 
 </div>
 
 ---
 
-The modern frontend is powerful, but fragmented. A single product can scatter
-itself across templates, style layers, component frameworks, build conventions,
-runtime rules, deployment glue, and editor-specific knowledge.
+## What we're building
 
-That fragmentation costs attention.
+PureStack turns a content directory into a static website. Write pages in
+Markdown or Regor MDX, compose them with built-in components, and add
+TypeScript for browser behavior. The CLI handles routes, styles, assets,
+local preview, and release builds.
 
-It costs humans, because the work becomes translation between layers. It costs
-AI, because the source of truth is spread across too many languages and too many
-implicit rules.
+The project brings together a site generator, Regor components, typed HTML
+and CSS builders, themes, browser scripts, and SVG icons in one TypeScript
+workspace.
 
-PureStack starts from a simple belief:
+<img src="https://raw.githubusercontent.com/PureStackStudio/PureStack/main/docs/assets/readme-features.svg" alt="PureStack capabilities: Markdown and Regor MDX content; panels, tabs, forms, and charts; typed styles and themes; PageScript and RegorApp browser behavior; static HTML, CSS, JavaScript, and assets; optional Pagefind search, navigation, and sitemaps." width="1200" />
 
-**the future product frontend should be coherent, typed, inspectable, and mostly
-TypeScript.**
+## Available today
 
-Markdown belongs where prose belongs. Everything else should be high-quality
-source that humans can reason about and AI can understand deeply.
+PureStack is [public on GitHub](https://github.com/PureStackStudio/PureStack)
+and [published on npm](https://www.npmjs.com/package/purestack) under the MIT
+license. The package includes the CLI and TypeScript site-generation API.
 
-PureStack is designed for a world where AI is not an assistant on the side, but
-part of the everyday act of building software.
+- **Content sites and documentation:** `.md`, `.mdx`, and `.rmdx` pages with
+  frontmatter, file-based routes, navigation, and optional Pagefind search.
+- **Interactive pages:** Regor components, page-specific TypeScript through
+  `PageScript`, and browser apps through `RegorApp`.
+- **Static builds:** HTML, CSS, JavaScript, and assets, with a minified publish
+  directory ready for your host.
+- **Development tooling:** local preview and reload, plus automated lint,
+  type checks, and tests on Linux and Windows.
 
-## 🧭 What PureStack Is
+The [VS Code extension source](https://github.com/PureStackStudio/PureStack/tree/main/packages/ts-ssg-vscode)
+is included as a private workspace package for component navigation,
+IntelliSense, and formatting.
 
-PureStack is an AI-native ecosystem for building real products:
-content sites, documentation, product frontends, admin surfaces, dashboards, and
-operational tools from one coherent source model.
+> **See it in use:** [purestack.studio](https://purestack.studio) is built with
+> PureStack. Its [source](https://github.com/PureStackStudio/PureStack/tree/main/frontend)
+> lives alongside the framework.
 
-Not another wrapper around the current frontend stack.
+## Start building
 
-Not a pile of glue between unrelated tools.
+Install PureStack in your project:
 
-Not a framework that hides complexity behind magic.
+```sh
+npm install purestack
+```
 
-A world where content, components, styles, scripts, tooling, and output are
-designed to belong together.
+The [repository quick start](https://github.com/PureStackStudio/PureStack#get-your-first-page-running)
+walks through creating your config, writing a page, and starting the preview.
 
-Where product behavior does not disappear into framework ceremony.
+For working examples, explore the
+[sample site](https://github.com/PureStackStudio/PureStack/tree/main/packages/ts-ssg/sample-content)
+and [component catalog](https://purestack.studio/components/).
 
-## ✨ Why It Matters
+## Work with us
 
-AI changes what good software architecture means.
+Try the framework, share a reproducible bug, improve an example, or contribute
+code. The [contribution guide](https://github.com/PureStackStudio/PureStack/blob/main/CONTRIBUTING.md)
+covers local development, pull requests, generated assets, and CI.
 
-AI code generation raises the value of coherent source. The better the source
-model, the better the generated software can be. When intent is scattered across
-many syntaxes and conventions, AI has to guess. When intent lives in typed,
-explicit TypeScript, AI can inspect, compose, and refactor with much more
-confidence.
+[Report an issue](https://github.com/PureStackStudio/PureStack/issues) ·
+[Read the source](https://github.com/PureStackStudio/PureStack) ·
+[Explore the documentation](https://purestack.studio/guides/)
 
-The best systems for AI are not the ones with the most conventions. They are the
-ones with the clearest source graph, strongest types, smallest translation
-surface, and most explicit intent.
+---
 
-PureStack is designed for that kind of software.
+<div align="center">
 
-It favors:
+[PureStack](https://github.com/PureStackStudio/PureStack) ·
+[purestack.studio](https://purestack.studio) ·
+[MIT license](https://github.com/PureStackStudio/PureStack/blob/main/LICENSE)
 
-- coherent source over scattered layers
-- TypeScript over glue code
-- explicit behavior over hidden runtime magic
-- real product workflows over framework theater
-- editor and AI comprehension as architecture goals
-- one coherent pipeline instead of accidental stack assembly
-
-## 🚪 Going Public
-
-PureStack is not an idea on a whiteboard.
-
-It is built. It works. It is already used in production.
-
-PureStack Studio is the home for opening it to the world: documentation,
-examples, packaging, the public site, and the public release are being prepared
-step by step.
-
-The foundation is not future tense. The foundation is here.
-
-The next work is making the world around it clear enough for others to enter.
-
-## 🌱 The Promise
-
-PureStack is a place where a product can be understood as TypeScript.
-
-Where content stays close to components.
-
-Where styles, scripts, state, and UI live as source.
-
-Where operational complexity can stay readable.
-
-Where tooling is part of the design.
-
-Where AI has enough structure to be genuinely useful.
-
-PureStack is currently founder-led, production-proven, and opening gradually.
-
-This is the beginning of its public life.
+</div>
